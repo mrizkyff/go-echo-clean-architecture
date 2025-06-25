@@ -1,0 +1,21 @@
+name: go-echo-clean-architecture-service
+
+postgres:
+  host: "localhost"
+  port: "5432"
+  dbname: "pendekin"
+  username: "postgres"
+  password: "admin123*"
+
+rabbitMq:
+  host: "localhost"
+  port: "5672"
+  username: "admin"
+  password: "admin123*"
+  virtualHost: "/"
+
+jwtConfig:
+  secret: secret
+  expirationHours: 1
+  refreshTokenDays: 1
+  issuer: example-origin.com
