@@ -1,0 +1,9 @@
+penggunaan class pada golang hampir sama dengan java dengan ketentuan berikut ini
+1. interface di golang sama dengan interface pada java
+2. struct di golang sama dengan class pada java.
+3. untuk melakukan implementasi class (struct) pada golang tidak ada cara explicit. Tetapi dengan cara mengimplementasikan semua method dari interface maka otomatis akan terimplementasi.
+4. Kemudian untuk pembuatan method harus menggunakan receiver struct itu tadi agar dianggap sebagai metode dari class tersebut.
+5. Properti pada golang juga hampir sama dengan java, yaitu dideklarasikan pada struct (class). Case menentukan modifiernya.
+6. Dependency injection menggunakan interface sebagai argumen, tetapi saat passing dari constructor menggunakan implementasinya
+7. Untuk agar lebih rapih bisa membuat struct untuk operasi datanya
+8. Update
