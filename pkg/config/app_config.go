@@ -21,6 +21,7 @@ func NewAppConfig(v *viper.Viper) *AppConfig {
 			Password: v.GetString("postgres.password"),
 			DBName:   v.GetString("postgres.dbname"),
 			Port:     v.GetString("postgres.port"),
+			SSLMode:  v.GetString("postgres.sslMode"),
 		},
 		RabbitMqConfig: config.RabbitMQConfig{
 			Username: v.GetString("rabbitMq.username"),

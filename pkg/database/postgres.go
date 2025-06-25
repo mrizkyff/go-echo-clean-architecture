@@ -23,7 +23,7 @@ func NewPostgresClient(DB *gorm.DB, config config.PostgresConfig) *PostgresClien
 
 func (receiver *PostgresClient) InitDBConnection() error {
 	// Konfigurasi koneksi PostgreSQL
-	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Asia/Jakarta", receiver.config.Host, receiver.config.Username, receiver.config.Password, receiver.config.DBName, receiver.config.Port)
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=%s TimeZone=Asia/Jakarta", receiver.config.Host, receiver.config.Username, receiver.config.Password, receiver.config.DBName, receiver.config.Port, receiver.config.SSLMode)
 
 	var err error
 	logrus.Info("*** Connecting to postgres ***")
