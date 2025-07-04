@@ -7,3 +7,4 @@ penggunaan class pada golang hampir sama dengan java dengan ketentuan berikut in
 6. Dependency injection menggunakan interface sebagai argumen, tetapi saat passing dari constructor menggunakan implementasinya
 7. Untuk agar lebih rapih bisa membuat struct untuk operasi datanya
 8. Update
+9. Fork this to domain-driven-development architecture
